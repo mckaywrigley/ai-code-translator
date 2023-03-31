@@ -7,8 +7,8 @@ import Head from 'next/head';
 import { useEffect, useState } from 'react';
 
 export default function Home() {
-  const [inputLanguage, setInputLanguage] = useState<string>('javascript');
-  const [outputLanguage, setOutputLanguage] = useState<string>('python');
+  const [inputLanguage, setInputLanguage] = useState<string>('JavaScript');
+  const [outputLanguage, setOutputLanguage] = useState<string>('Python');
   const [inputCode, setInputCode] = useState<string>('');
   const [outputCode, setOutputCode] = useState<string>('');
   const [model, setModel] = useState<OpenAIModel>('gpt-3.5-turbo');

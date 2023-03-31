@@ -16,12 +16,55 @@ export const LanguageSelect: FC<Props> = ({ language, onChange }) => {
       value={language}
       onChange={handleChange}
     >
-      <option value="javascript">JavaScript</option>
-      <option value="typescript">TypeScript</option>
-      <option value="python">Python</option>
-      <option value="tsx">TSX</option>
-      <option value="jsx">JSX</option>
-      <option value="go">Go</option>
+      {languages
+        .sort((a, b) => a.label.localeCompare(b.label))
+        .map((language) => (
+          <option key={language.value} value={language.value}>
+            {language.label}
+          </option>
+        ))}
     </select>
   );
 };
+
+const languages = [
+  { value: 'JavaScript', label: 'JavaScript' },
+  { value: 'TypeScript', label: 'TypeScript' },
+  { value: 'Python', label: 'Python' },
+  { value: 'TSX', label: 'TSX' },
+  { value: 'JSX', label: 'JSX' },
+  { value: 'Go', label: 'Go' },
+  { value: 'C', label: 'C' },
+  { value: 'C++', label: 'C++' },
+  { value: 'Java', label: 'Java' },
+  { value: 'C#', label: 'C#' },
+  { value: ' Visual Basic .NET', label: ' Visual Basic .NET' },
+  { value: 'SQL', label: 'SQL' },
+  { value: 'Assembly Language', label: 'Assembly Language' },
+  { value: 'PHP', label: 'PHP' },
+  { value: 'Ruby', label: 'Ruby' },
+  { value: 'Swift', label: 'Swift' },
+  { value: 'Kotlin', label: 'Kotlin' },
+  { value: 'R', label: 'R' },
+  { value: 'Objective-C', label: 'Objective-C' },
+  { value: 'Perl', label: 'Perl' },
+  { value: 'Scala', label: 'Scala' },
+  { value: 'Dart', label: 'Dart' },
+  { value: 'Rust', label: 'Rust' },
+  { value: 'Haskell', label: 'Haskell' },
+  { value: 'Lua', label: 'Lua' },
+  { value: 'Groovy', label: 'Groovy' },
+  { value: 'Elixir', label: 'Elixir' },
+  { value: 'Clojure', label: 'Clojure' },
+  { value: 'Lisp', label: 'Lisp' },
+  { value: 'Julia', label: 'Julia' },
+  { value: 'Matlab', label: 'Matlab' },
+  { value: 'Fortran', label: 'Fortran' },
+  { value: 'COBOL', label: 'COBOL' },
+  { value: 'Bash', label: 'Bash' },
+  { value: 'Powershell', label: 'Powershell' },
+  { value: 'PL/SQL', label: 'PL/SQL' },
+  { value: 'CSS', label: 'Racket' },
+  { value: 'HTML', label: 'HTML' },
+  { value: 'NoSQL', label: 'NoSQL' },
+];
