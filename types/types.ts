@@ -5,6 +5,7 @@ export interface TranslateBody {
   outputLanguage: string;
   inputCode: string;
   model: OpenAIModel;
+  apiKey: string;
 }
 
 export interface TranslateResponse {

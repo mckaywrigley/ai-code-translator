@@ -8,7 +8,7 @@ export const config = {
 
 const handler = async (req: Request): Promise<Response> => {
   try {
-    const { inputLanguage, outputLanguage, inputCode, model } =
+    const { inputLanguage, outputLanguage, inputCode, model, apiKey } =
       (await req.json()) as TranslateBody;
 
     const prompt = endent`
@@ -33,11 +33,7 @@ const handler = async (req: Request): Promise<Response> => {
 
     const system = { role: 'system', content: prompt };
 
-    const stream = await OpenAIStream(
-      model,
-      [system],
-      process.env.OPENAI_API_KEY!,
-    );
+    const stream = await OpenAIStream(model, [system], apiKey);
 
     return new Response(stream);
   } catch (error) {

@@ -51,6 +51,7 @@ export default function Home() {
       outputLanguage,
       inputCode,
       model,
+      apiKey,
     };
 
     const response = await fetch('/api/translate', {
