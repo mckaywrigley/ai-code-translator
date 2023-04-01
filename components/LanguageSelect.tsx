@@ -28,6 +28,7 @@ export const LanguageSelect: FC<Props> = ({ language, onChange }) => {
 };
 
 const languages = [
+  { value: 'Pascal', label: 'Pascal' },
   { value: 'JavaScript', label: 'JavaScript' },
   { value: 'TypeScript', label: 'TypeScript' },
   { value: 'Python', label: 'Python' },
