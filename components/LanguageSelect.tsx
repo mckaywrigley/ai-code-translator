@@ -68,4 +68,5 @@ const languages = [
   { value: 'CSS', label: 'Racket' },
   { value: 'HTML', label: 'HTML' },
   { value: 'NoSQL', label: 'NoSQL' },
+  { value: 'Natural Language', label: 'Natural Language' },
 ];

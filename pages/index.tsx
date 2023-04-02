@@ -2,6 +2,7 @@ import { APIKeyInput } from '@/components/APIKeyInput';
 import { CodeBlock } from '@/components/CodeBlock';
 import { LanguageSelect } from '@/components/LanguageSelect';
 import { ModelSelect } from '@/components/ModelSelect';
+import { TextBlock } from '@/components/TextBlock';
 import { OpenAIModel, TranslateBody } from '@/types/types';
 import Head from 'next/head';
 import { useEffect, useState } from 'react';
@@ -167,7 +168,7 @@ export default function Home() {
         </div>
 
         <div className="mt-6 flex w-full max-w-[1200px] flex-col justify-between sm:flex-row sm:space-x-4">
-          <div className="flex h-full flex-col	justify-center space-y-2 sm:w-2/4">
+          <div className="h-100 flex flex-col justify-center space-y-2 sm:w-2/4">
             <div className="text-center text-xl font-bold">Input</div>
 
             <LanguageSelect
@@ -180,14 +181,25 @@ export default function Home() {
               }}
             />
 
-            <CodeBlock
-              code={inputCode}
-              editable={!loading}
-              onChange={(value) => {
-                setInputCode(value);
-                setHasTranslated(false);
-              }}
-            />
+            {inputLanguage === 'Natural Language' ? (
+              <TextBlock
+                text={inputCode}
+                editable={!loading}
+                onChange={(value) => {
+                  setInputCode(value);
+                  setHasTranslated(false);
+                }}
+              />
+            ) : (
+              <CodeBlock
+                code={inputCode}
+                editable={!loading}
+                onChange={(value) => {
+                  setInputCode(value);
+                  setHasTranslated(false);
+                }}
+              />
+            )}
           </div>
           <div className="mt-8 flex h-full flex-col justify-center space-y-2 sm:mt-0 sm:w-2/4">
             <div className="text-center text-xl font-bold">Output</div>
@@ -200,7 +212,11 @@ export default function Home() {
               }}
             />
 
-            <CodeBlock code={outputCode} />
+            {outputLanguage === 'Natural Language' ? (
+              <TextBlock text={outputCode} />
+            ) : (
+              <CodeBlock code={outputCode} />
+            )}
           </div>
         </div>
       </div>
