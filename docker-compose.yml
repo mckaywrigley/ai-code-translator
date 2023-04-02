@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  ai-code-translator:
+    build: .
+    container_name: ai_code_translator
+    ports:
+      - '3001:3000'
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+    command: npm run dev
+    restart: always
+    security_opt:
+      - no-new-privileges:true
