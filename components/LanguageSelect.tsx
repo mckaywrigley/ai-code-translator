@@ -46,6 +46,7 @@ const languages = [
   { value: 'PHP', label: 'PHP' },
   { value: 'Ruby', label: 'Ruby' },
   { value: 'Swift', label: 'Swift' },
+  { value: 'SwiftUI', label: 'SwiftUI' },
   { value: 'Kotlin', label: 'Kotlin' },
   { value: 'R', label: 'R' },
   { value: 'Objective-C', label: 'Objective-C' },
