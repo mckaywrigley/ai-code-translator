@@ -117,7 +117,7 @@ export default function Home() {
   const onFileUpload = (e:ProgressEvent<FileReader>)=>{
     const content = e.target?.result as string;
     setInputCode(content);
-  }
+  };
 
   useEffect(() => {
     if (hasTranslated) {
