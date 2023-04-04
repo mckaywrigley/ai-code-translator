@@ -15,7 +15,7 @@ export const CodeBlock: FC<Props> = ({
   editable = false,
   onChange = () => {},
 }) => {
-  const [copyText, setCopyText] = useState<string>('Copy');
+  const [copyText, setCopyText] = useState('Copy');
 
   useEffect(() => {
     const timeout = setTimeout(() => {
