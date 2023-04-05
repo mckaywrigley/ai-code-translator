@@ -1,5 +1,6 @@
 import { APIKeyInput } from '@/components/APIKeyInput';
 import { CodeBlock } from '@/components/CodeBlock';
+import { FileUpload } from '@/components/FileUploader';
 import { LanguageSelect } from '@/components/LanguageSelect';
 import { ModelSelect } from '@/components/ModelSelect';
 import { TextBlock } from '@/components/TextBlock';
@@ -113,6 +114,11 @@ export default function Home() {
     localStorage.setItem('apiKey', value);
   };
 
+  const onFileUpload = (e:ProgressEvent<FileReader>)=>{
+    const content = e.target?.result as string;
+    setInputCode(content);
+  };
+
   useEffect(() => {
     if (hasTranslated) {
       handleTranslate();
@@ -180,6 +186,9 @@ export default function Home() {
                 setOutputCode('');
               }}
             />
+
+            <FileUpload onUpload={
+            onFileUpload}/>
 
             {inputLanguage === 'Natural Language' ? (
               <TextBlock
