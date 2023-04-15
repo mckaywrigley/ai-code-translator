@@ -168,7 +168,7 @@ export default function Home() {
         </div>
 
         <div className="mt-6 flex w-full max-w-[1200px] flex-col justify-between sm:flex-row sm:space-x-4">
-          <div className="h-100 flex flex-col justify-center space-y-2 sm:w-2/4">
+          <div className="h-100 flex flex-col space-y-2 sm:w-2/4">
             <div className="text-center text-xl font-bold">Input</div>
 
             <LanguageSelect
@@ -201,7 +201,7 @@ export default function Home() {
               />
             )}
           </div>
-          <div className="mt-8 flex h-full flex-col justify-center space-y-2 sm:mt-0 sm:w-2/4">
+          <div className="mt-8 flex h-full flex-col space-y-2 sm:mt-0 sm:w-2/4">
             <div className="text-center text-xl font-bold">Output</div>
 
             <LanguageSelect
