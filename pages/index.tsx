@@ -14,7 +14,7 @@ export default function Home() {
   const [inputCode, setInputCode] = useState<string>('');
   const [outputCode, setOutputCode] = useState<string>('');
   const [statuscode, setStatusCode] = useState<boolean>(false);
-  const [data, setData] = useState({json: {"Syntax": "Value"},  });
+  const [data, setData] = useState({json: {"Syntax": "MY Value", "Suggestions": "'To produce the same result as the Cobol code, you can make the following changes in the Python code:\n\n1. Use the Decimal data type for more precise calculations.\n2. Adjust the precision of the temperature change calculation to match the Cobol code.\n3. Convert the final result to the desired format for display.'"},  });
   const [model, setModel] = useState<OpenAIModel>('gpt-3.5-turbo');
   const [loading, setLoading] = useState<boolean>(false);
   const [hasTranslated, setHasTranslated] = useState<boolean>(false);
@@ -212,11 +212,11 @@ export default function Home() {
           <div className="h-100 flex flex-col justify-center space-y-2 sm:w-2/4">
  
           <div className="mt-2 flex items-center space-x-5">
-            <i className="bi bi-square-fill text-green-500"> Check 1</i>
-            <i className="bi bi-square-fill text-red-500"> Check 2</i>
-            <i className="bi bi-square-fill text-red-500"> Check 3</i>
-            <i className="bi bi-square-fill text-red-500"> Check 4</i>
-            <i className="bi bi-square-fill text-red-500"> Check 5</i>
+            <i className="bi bi-square-fill text-green-500"> Similarity Check_1</i>
+            <i className="bi bi-square-fill text-red-500"> Similarity Check_2</i>
+            <i className="bi bi-square-fill text-red-500"> Syntax</i>
+            <i className="bi bi-square-fill text-red-500"> Consistency</i>
+            <i className="bi bi-square-fill text-red-500"> Code Functionality</i>
           </div>
           
           </div>
@@ -243,14 +243,22 @@ export default function Home() {
           </div>
           <div className="mt-8 flex h-full flex-col justify-center space-y-2 sm:mt-0 sm:w-2/4">
             <div className="text-center text-xl font-bold">Python</div>
-            <CodeBlock code={data.json.Syntax} />
+            <CodeBlock code={data.json.Suggestions} />
 
           </div>
-          {/* <div className="mt-8 flex h-full flex-col justify-center space-y-2 sm:mt-0 sm:w-2/4">
-            <div className="text-center text-xl font-bold">Explanation/Suggestions</div>
-            <CodeBlock code={data} />
+          
+        </div>
+        
+        <div className="mt-6 flex w-full max-w-[1800px] flex-col justify-between sm:flex-row sm:space-x-4">
+        <div className="mt-8 flex h-full flex-col justify-center space-y-2 sm:mt-0 sm:w-2/4">
+            <div className="text-center text-xl font-bold">Explanation</div>
+            <CodeBlock code={data.json.Suggestions} />
+          </div>
 
-          </div> */}
+          <div className="mt-8 flex h-full flex-col justify-center space-y-2 sm:mt-0 sm:w-2/4">
+            <div className="text-center text-xl font-bold">Suggestions</div>
+            <CodeBlock code={data.json.Suggestions} />
+          </div>
         </div>
       </div>
     </>
