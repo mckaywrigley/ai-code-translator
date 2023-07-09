@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bi-square-fill[data-status="Green"] {
+    color: green;
+  }
+  
+  .bi-square-fill[data-status="Red"] {
+    color: red;
+  }
+  .bi-square-fill[data-status="Yes"] {
+    color: green;
+  }
+  
+  .bi-square-fill[data-status="No"] {
+    color: red;
+  }
+  .bi-square-fill[data-status="Amber"] {
+    color: orange;
+  }
+
+  .CodeMirror {
+    word-break: break-word;
+}

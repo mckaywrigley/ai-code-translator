@@ -27,7 +27,7 @@ export const CodeBlock: FC<Props> = ({
   }, [copyText]);
 
   return (
-    <div className="relative">
+    <div  style={{ wordWrap: "break-word" }} className="relative">
       <button
         className="absolute right-0 top-0 z-10 rounded bg-[#1A1B26] p-1 text-xs text-white hover:bg-[#2D2E3A] active:bg-[#2D2E3A]"
         onClick={() => {
@@ -45,6 +45,7 @@ export const CodeBlock: FC<Props> = ({
         extensions={[StreamLanguage.define(go)]}
         theme={tokyoNight}
         onChange={(value) => onChange(value)}
+       
       />
     </div>
   );

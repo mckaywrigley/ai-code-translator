@@ -1,6 +1,6 @@
 import { APIKeyInput } from '@/components/APIKeyInput';
 import { CodeBlock } from '@/components/CodeBlock';
-import { newCodeBlock } from '@/components/CodeBlock';
+
 import { LanguageSelect } from '@/components/LanguageSelect';
 import { ModelSelect } from '@/components/ModelSelect';
 import { TextBlock } from '@/components/TextBlock';
@@ -13,8 +13,14 @@ export default function Home() {
   const [outputLanguage, setOutputLanguage] = useState<string>('Python');
   const [inputCode, setInputCode] = useState<string>('');
   const [outputCode, setOutputCode] = useState<string>('');
-  const [statuscode, setStatusCode] = useState<boolean>(false);
-  const [data, setData] = useState({json: {"Syntax": "MY Value", "Suggestions": "'To produce the same result as the Cobol code, you can make the following changes in the Python code:\n\n1. Use the Decimal data type for more precise calculations.\n2. Adjust the precision of the temperature change calculation to match the Cobol code.\n3. Convert the final result to the desired format for display.'"},  });
+  const [suggestion, setSuggestions] = useState<string>('');
+  const [explanation, setExplanation] = useState<string>('');
+  const [check1, setCheck1] = useState<string>('');
+  const [check2, setCheck2] = useState<string>('');
+  const [syntax, setSyntax] = useState<string>('');
+  const [result, setResult] = useState<string>('');
+  const [functionality, setFunctionality] = useState<string>('');
+  const [data, setData] = useState({ json: { "Syntax": "MY Value", "Suggestions": "'To produce the same result as the Cobol code, you can make the following changes in the Python code:\n\n1. Use the Decimal data type for more precise calculations.\n2. Adjust the precision of the temperature change calculation to match the Cobol code.\n3. Convert the final result to the desired format for display.'" }, });
   const [model, setModel] = useState<OpenAIModel>('gpt-3.5-turbo');
   const [loading, setLoading] = useState<boolean>(false);
   const [hasTranslated, setHasTranslated] = useState<boolean>(false);
@@ -119,11 +125,31 @@ export default function Home() {
 
     setLoading(true);
 
-    const json = await fetch("https://genaifastapi-1-h1144556.deta.app/constantoutput").then((res) => res.json());
-    
-    setData(json);
-    setLoading(false);
-    setHasTranslated(true);
+    // const json = await fetch("https://genaifastapi-1-h1144556.deta.app/constantoutput").then((res) => res.json());
+    // const callAPI = async () => {
+      try {
+        const res = await fetch(
+          `https://genaifastapi-1-h1144556.deta.app/constantoutput`
+        );
+        const data = await res.json();
+        console.log(data);
+        setData(data);
+        setOutputCode(data.Python_Code);
+        setSuggestions(data.Suggestions);
+        setExplanation(data.Explanation);
+        setCheck1(data.Check_1);
+        setCheck2(data.Check_2);
+        setSyntax(data.Syntax);
+        setFunctionality(data.Functionality);
+        setResult(data.Result);
+        setLoading(false);
+        setHasTranslated(true);
+      } catch (err) {
+        console.log(err);
+      }
+    // };
+
+
 
   };
 
@@ -166,7 +192,7 @@ export default function Home() {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-        <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"></link>
+        
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"></link>
       </Head>
       <div className="flex flex-col items-center justify-center bg-[#0E1117] text-neutral-200 sm:px-10">
@@ -210,15 +236,15 @@ export default function Home() {
           </div>
 
           <div className="h-100 flex flex-col justify-center space-y-2 sm:w-2/4">
- 
-          <div className="mt-2 flex items-center space-x-5">
-            <i className="bi bi-square-fill text-green-500"> Similarity Check_1</i>
-            <i className="bi bi-square-fill text-red-500"> Similarity Check_2</i>
-            <i className="bi bi-square-fill text-red-500"> Syntax</i>
-            <i className="bi bi-square-fill text-red-500"> Consistency</i>
-            <i className="bi bi-square-fill text-red-500"> Code Functionality</i>
-          </div>
-          
+
+            <div className="mt-2 flex items-center space-x-5">
+              <i className="bi bi-square-fill" data-status={check1}> Similarity Check_1</i>
+              <i className="bi bi-square-fill" data-status={check2}> Similarity Check_2</i>
+              <i className="bi bi-square-fill" data-status={syntax}> Syntax</i>
+              <i className="bi bi-square-fill" data-status={result}> Consistency</i>
+              <i className="bi bi-square-fill" data-status={functionality}> Code Functionality</i>
+            </div>
+
           </div>
 
         </div>
@@ -243,21 +269,21 @@ export default function Home() {
           </div>
           <div className="mt-8 flex h-full flex-col justify-center space-y-2 sm:mt-0 sm:w-2/4">
             <div className="text-center text-xl font-bold">Python</div>
-            <CodeBlock code={data.json.Suggestions} />
+            <CodeBlock code={outputCode} />
 
           </div>
-          
+
         </div>
-        
+
         <div className="mt-6 flex w-full max-w-[1800px] flex-col justify-between sm:flex-row sm:space-x-4">
-        <div className="mt-8 flex h-full flex-col justify-center space-y-2 sm:mt-0 sm:w-2/4">
+          <div className="mt-8 flex h-full flex-col justify-center space-y-2 sm:mt-0 sm:w-2/4">
             <div className="text-center text-xl font-bold">Explanation</div>
-            <CodeBlock code={data.json.Suggestions} />
+            <CodeBlock code={explanation} />
           </div>
 
           <div className="mt-8 flex h-full flex-col justify-center space-y-2 sm:mt-0 sm:w-2/4">
             <div className="text-center text-xl font-bold">Suggestions</div>
-            <CodeBlock code={data.json.Suggestions} />
+            <CodeBlock code={suggestion} />
           </div>
         </div>
       </div>
