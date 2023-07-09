@@ -12,6 +12,7 @@
     "@codemirror/legacy-modes": "^6.3.2",
     "@uiw/codemirror-theme-tokyo-night": "^4.19.11",
     "@uiw/react-codemirror": "^4.19.11",
+    "bootstrap-icons": "^1.10.5",
     "endent": "^2.1.0",
     "eventsource-parser": "^1.0.0",
     "next": "13.2.4",

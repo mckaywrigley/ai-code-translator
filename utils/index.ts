@@ -5,6 +5,7 @@ import {
   ReconnectInterval,
 } from 'eventsource-parser';
 
+
 const createPrompt = (
   inputLanguage: string,
   outputLanguage: string,
@@ -122,9 +123,13 @@ export const OpenAIStream = async (
 
           try {
             const json = JSON.parse(data);
+
+            const conf_vector = {conf_Vector: true}
+            
             const text = json.choices[0].delta.content;
             const queue = encoder.encode(text);
             controller.enqueue(queue);
+            controller.enqueue(conf_vector)
           } catch (e) {
             controller.error(e);
           }

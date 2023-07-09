@@ -10,6 +10,7 @@ interface Props {
   onChange?: (value: string) => void;
 }
 
+
 export const CodeBlock: FC<Props> = ({
   code,
   editable = false,
@@ -48,3 +49,6 @@ export const CodeBlock: FC<Props> = ({
     </div>
   );
 };
+
+
+
