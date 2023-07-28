@@ -18,7 +18,15 @@ export default function Home() {
   const [apiKey, setApiKey] = useState<string>('');
 
   const handleTranslate = async () => {
-    const maxCodeLength = model === 'gpt-3.5-turbo' ? 6000 : 12000;
+    let maxCodeLength;
+
+    if (model === 'gpt-3.5-turbo') {
+      maxCodeLength = 6000;
+    } else if (model === 'gpt-3.5-turbo-16k') {
+      maxCodeLength = 24000;
+    } else {
+      maxCodeLength = 12000;
+    }
 
     if (!apiKey) {
       alert('Please enter an API key.');
