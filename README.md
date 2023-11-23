@@ -1,4 +1,9 @@
-# AI Code Translator
+**************************************************************************************************************************
+*****************  This is my own implementation, USE AT YOUR OWN RISK, DO NOT EXPECT ANY SUPPORT  ***********************
+**************************************************************************************************************************
+
+
+AI Code Translator
 
 Use AI to translate code from one language to another.
 
