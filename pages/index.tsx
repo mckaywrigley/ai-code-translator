@@ -17,7 +17,7 @@ export default function Home() {
   const [apiKey, setApiKey] = useState<string>('');
 
   const handleTranslate = async () => {
-    const maxCodeLength = model === 'gpt-3.5-turbo' ? 6000 : 12000;
+    const maxCodeLength = model === 'gpt-3.5-turbo' ? 6000 : 128000;
 
     if (!apiKey) {
       alert('Please enter an API key.');
@@ -36,7 +36,7 @@ export default function Home() {
 
     if (inputCode.length > maxCodeLength) {
       alert(
-        `Please enter code less than ${maxCodeLength} characters. You are currently at ${inputCode.length} characters.`,
+        `Please enter code less than ${maxCodeLength} characters. You are currently at ${inputCode.length} characters.  A different model may allow enough characters`,
       );
       return;
     }
