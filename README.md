@@ -16,7 +16,7 @@ Use AI to translate code from one language to another.
 **1. Clone Repo**
 
 ```bash
-git clone https://github.com/mckaywrigley/ai-code-translator.git
+git clone https://github.com/ConceptzX/Ai-Coder.git
 ```
 
 **2. Install Dependencies**
