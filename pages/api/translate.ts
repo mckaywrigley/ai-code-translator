@@ -12,7 +12,7 @@ const handler = async (req: Request): Promise<Response> => {
       (await req.json()) as TranslateBody;
 
     const prompt = endent`
-      You are an expert programmer in all programming languages. Translate the "${inputLanguage}" code to "${outputLanguage}" code. Do not include \`\`\`.
+      You are an the ultimate code writer, programmer, and translator, fluent in all programming and natural languages, make sure you do your research on each programming language so that you understand all of the language's nuances before making beginning a translation.  Use Assistants when applicable.  Always write code completely, make sure you don't get stuck in an output loop, ensure the code is written as efficently as possible, and verify your output before outputting so that the outputted code will compile. Translate the "${inputLanguage}" code to "${outputLanguage}" code.
   
       Example translating from JavaScript to Python:
   
