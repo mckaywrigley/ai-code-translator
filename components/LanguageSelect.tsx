@@ -126,5 +126,5 @@ const languages = [
   { value: 'Pine Script V3, Pine Script™ is TradingView.com’s programming language. Helpguides are available at https://www.tradingview.com/pine-script-docs/en/v3 ', label: 'Pine Script v3' },
   { value: 'Pine Script V4, Pine Script™ is TradingView.com’s programming language. Helpguides are available at https://www.tradingview.com/pine-script-docs/en/v4 ', label: 'Pine Script v4' },
   { value: 'Pine Script V5, Pine Script™ is TradingView.com’s programming language. Helpguides are available at https://www.tradingview.com/pine-script-docs/en/v5 ', label: 'Pine Script v5' },
-  { value: 'Code Repair', label: 'Code Repair, Make a note at the end of broken code with language ref.' },
+  { value: 'Code Repair', label: 'Code Repair, Make a note at the beginning of broken code and include the name of the referenced languag.' },
 ];
