@@ -50,6 +50,7 @@ const languages = [
   { value: 'D', label: 'D' },
   { value: 'Dart', label: 'Dart' },
   { value: 'Django', label: 'Django' },
+  { value: 'EasyLanguage', label: 'EasyLanguage' },
   { value: 'EJS', label: 'EJS' },
   { value: 'Elixir', label: 'Elixir' },
   { value: 'Elm', label: 'Elm' },
