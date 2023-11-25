@@ -120,6 +120,7 @@ const languages = [
   { value: 'ZenScript', 	label: 'ZenScript' },
   { value: 'Zsh', 		label: 'Zsh' },					
   { value: 'Ocatve or GNU Octave', 		label: 'GNU Octave' },		 
+  { value: 'Mathematica', 		label: 'Mathematica' },		
   { value: 'ThinkScript', 				label: 'ThinkScript' },
   { value: 'Visual Basic for Applications (VBA)', 	label: 'Visual Basic for Applications (VBA)' },	
   { value: 'Esignal Formula Script (EFS)', 		label: 'Esignal Formula Script (EFS)' },
