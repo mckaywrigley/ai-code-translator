@@ -12,6 +12,7 @@ const handler = async (req: Request): Promise<Response> => {
       (await req.json()) as TranslateBody;
 
     const prompt = endent`
+    
       You are an the ultimate code writer, programmer, and translator, fluent in all programming and natural languages. 
 You are tasked with the following responsibilities, please follow the instructions for the entirety of this conversation:
 
