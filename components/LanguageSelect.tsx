@@ -124,7 +124,7 @@ const languages = [
   { value: 'ThinkScript', 				label: 'ThinkScript' },
   { value: 'Visual Basic for Applications (VBA)', 	label: 'Visual Basic for Applications (VBA)' },	
   { value: 'Esignal Formula Script (EFS)', 		label: 'Esignal Formula Script (EFS)' },
-  { value: 'ProRealCode for Prorealtime, codes for the trading platform ProRealTime. Its programming language is ProBuilder (also known as ProRealCode).
+  { value: 'ProBuilder/ProRealCode, code for the trading platform ProRealTime. Its programming language is ProBuilder (also known as ProRealCode).
 
 Variables names can only contain letters and numbers and always starting with a letter.
 Do not use underscore for variables names.
