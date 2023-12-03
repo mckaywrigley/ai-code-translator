@@ -118,59 +118,35 @@ const languages = [
   { value: 'Verilog', 		label: 'Verilog' },
   { value: 'Vue', 		label: 'Vue' },
   { value: 'ZenScript', 	label: 'ZenScript' },
-  { value: 'Zsh', 		label: 'Zsh' },					
-  { value: 'Ocatve or GNU Octave', 		label: 'GNU Octave' },		 
+  { value: 'Zsh', 		label: 'Zsh' },		
+			
+  { value: 'Ocatve or GNU Octave', 		label: 'GNU Octave' },
+		 
   { value: 'Mathematica', 		label: 'Mathematica' },		
+
   { value: 'ThinkScript', 				label: 'ThinkScript' },
+
   { value: 'Visual Basic for Applications (VBA)', 	label: 'Visual Basic for Applications (VBA)' },	
+
   { value: 'Esignal Formula Script (EFS)', 		label: 'Esignal Formula Script (EFS)' },
-  { value: 'ProBuilder/ProRealCode, code for the trading platform ProRealTime. Its programming language is ProBuilder (also known as ProRealCode).
 
-Variables names can only contain letters and numbers and always starting with a letter.
-Do not use underscore for variables names.
-Variables names are not case sensitive.
-Variables can’t be set UNDEFINED, a null value is 0.
-Instructions are reserved keywords and can’t be used for variables names.
+  { value: 'ProBuilder/ProRealCode, code for the trading platform ProRealTime. Its programming language is ProBuilder (also known as ProRealCode).',         label: 'ProRealCode' },
 
-_To set a pending buy stop order at price X, price must be below the price X, use the instruction: BUY AT X STOP
-_To add a trailing stop of X points, use the instruction: SET STOP PTRAILING X
-_The upper bollinger band of period X and deviation Y is calculated with the instruction: AVERAGE[X]+STD[X]*Y
-_To get the point value in money use the constant: POINTVALUE
-_To get the point size use the constant: POINTSIZE
-_To get the average price of current positions use: POSITIONPRICE
-_To get profit in money of current positions use this snippet:
-floatingprofit = (((close-positionprice)*pointvalue)*countofposition)/pointsize //actual trade gains
-_ Equal comparison is made with a single equal character.
-
-example of prompt:
-_ code a strategy that: buy when supertrend cross under the price and sellshort when supertrend cross over, takeprofit is 50 points and stoploss is 25 points.
-The resulting code is below:
-
-defparam cumulateOrders = false
-
-// Setting the parameters for the supertrend indicator
-Length = 14
-Multiplier = 3
-
-indicator1 = supertrend[Multiplier,Length]
-
-if close crosses over indicator1 then
-buy at market
-endif
-
-if close crosses under indicator1 then
-sellshort at market
-endif
-
-set target pprofit 50
-set stop ploss 25',         label: 'ProRealCode' },
   { value: 'MetaStock Formula Language (MFL)', 		label: 'MetaStock Formula Language (MFL)' },
+
   { value: 'Amibroker Formula Language (AFL)', 		label: 'Amibroker Formula Language (AFL)' },
+
   { value: 'NinjaScript for NinjaTrader 7, NinjaScript is a nuanced language is written in C# targeting .NET 3.5 Care needs to be taken to ensure the code is not broken by incorrectly referencing C# or a different version of NinjaScript.', label: 'NinjaScript 7' },
+
   { value: 'NinjaScript for NinjaTrader 8.1.2.0 or higher, NinjaScript is a nuanced language written in C# targeting .NET 8.0 Care needs to be taken to ensure the code is not broken by incorrectly referencing C# or a different version of NinjaScript.', label: 'NinjaScript >= 8.1.2.0' },
+
   { value: 'NinjaScript for NinjaTrader 8.1.1.7 or lower, NinjaScript is a nuanced language written in C# targeting .NET 4.8 Care needs to be taken to ensure the code is not broken by incorrectly referencing C# or a different version of NinjaScript.', label: 'NinjaScript <= 8.1.1.7' },
+
   { value: 'Pine Script V3, Pine Script™ is TradingView.com’s programming language. Helpguides are available at https://www.tradingview.com/pine-script-docs/en/v3 ', label: 'Pine Script v3' },
+
   { value: 'Pine Script V4, Pine Script™ is TradingView.com’s programming language. Helpguides are available at https://www.tradingview.com/pine-script-docs/en/v4 ', label: 'Pine Script v4' },
+
   { value: 'Pine Script V5, Pine Script™ is TradingView.com’s programming language. Helpguides are available at https://www.tradingview.com/pine-script-docs/en/v5 ', label: 'Pine Script v5' },
+
   { value: 'Code Repair', label: 'Code Repair, Make a note at the end of broken code with language ref.' },
 ];
