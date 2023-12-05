@@ -126,6 +126,8 @@ const languages = [
 
   { value: 'ThinkScript', 				label: 'ThinkScript' },
 
+  { value: 'C++ for SierraChart trading platform, utilizes ACSIL programming concepts', 		label: 'SierraChart - C++' },		
+
   { value: 'Visual Basic for Applications (VBA)', 	label: 'Visual Basic for Applications (VBA)' },	
 
   { value: 'Esignal Formula Script (EFS)', 		label: 'Esignal Formula Script (EFS)' },
