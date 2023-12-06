@@ -78,6 +78,7 @@ const languages = [
   { value: 'Lua', 		label: 'Lua' },
   { value: 'Makefile', 		label: 'Makefile' },
   { value: 'Matlab', 		label: 'Matlab' },
+  { value: 'Mojo', 		label: 'Mojo' },
   { value: 'MoonScript', 	label: 'MoonScript' },
   { value: 'MQL4',		label: 'MQL4' },
   { value: 'MQL5', 		label: 'MQL5' },
@@ -118,6 +119,7 @@ const languages = [
   { value: 'Verilog', 		label: 'Verilog' },
   { value: 'Vue', 		label: 'Vue' },
   { value: 'ZenScript', 	label: 'ZenScript' },
+  { value: 'Zig', 		label: 'Zig' },
   { value: 'Zsh', 		label: 'Zsh' },		
 			
   { value: 'Ocatve or GNU Octave', 		label: 'GNU Octave' },
@@ -150,5 +152,5 @@ const languages = [
 
   { value: 'Pine Script V5, Pine Script™ is TradingView.com’s programming language. Helpguides are available at https://www.tradingview.com/pine-script-docs/en/v5 ', label: 'Pine Script v5' },
 
-  { value: 'Code Repair', label: 'Code Repair, Make a note at the end of broken code with language ref.' },
+  { value: 'Code Repair', label: 'Code Repair, Make a note at the end of broken code with a reference to the presented language.' },
 ];
