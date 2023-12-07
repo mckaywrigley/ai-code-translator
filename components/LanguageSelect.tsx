@@ -74,4 +74,5 @@ const languages = [
   { value: 'NoSQL', label: 'NoSQL' },
   { value: 'Natural Language', label: 'Natural Language' },
   { value: 'CoffeeScript', label: 'CoffeeScript' },
+  { value: 'VB6', label: 'VB6' }
 ];
