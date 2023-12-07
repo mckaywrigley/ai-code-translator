@@ -118,6 +118,7 @@ Currently supported Languages:
 'TypeScript'
 'Vala'
 'Visual Basic'
+'Visual Basic 6 - VB6'
 'VB.NET'
 'VBScript'
 'Velocity'
