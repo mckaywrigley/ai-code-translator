@@ -113,6 +113,7 @@ const languages = [
   { value: 'TypeScript', 	label: 'TypeScript' },
   { value: 'Vala', 		label: 'Vala' },
   { value: 'Visual Basic', 	label: 'Visual Basic' },
+  { value: 'VB6', 		label: 'Visual Basic 6 - VB6' },
   { value: 'VB.NET', 		label: 'VB.NET' },
   { value: 'VBScript', 		label: 'VBScript' },
   { value: 'Velocity', 		label: 'Velocity' },
