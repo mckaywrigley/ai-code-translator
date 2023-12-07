@@ -33,6 +33,7 @@ npm run dev
 You can add your OpenAI key to the key by replacing the text in the .env.local.example file and renaming it .env to retain the key for future sessions
 
 Currently supported Languages:
+**************************************************************************************************************************
 'Natural Language'
 'ActionScript'
 'Ada'
