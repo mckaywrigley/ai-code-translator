@@ -143,4 +143,4 @@ Currently supported Languages:
 'Pine Script V3'
 'Pine Script V4'
 'Pine Script V5'
-'Code Repair'
+'Code Repair/Editor'
