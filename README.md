@@ -1,15 +1,18 @@
 **************************************************************************************************************************
 **************************************************************************************************************************
-  This is my own implementation of AI Code Translator, USE AT YOUR OWN RISK, DO NOT EXPECT ANY SUPPORT  
+  This is my own implementation of AI Code Translator, USE AT YOUR OWN RISK, DO NOT EXPECT ANY SUPPORT
 **************************************************************************************************************************
 **************************************************************************************************************************
-* currently configured to spend an extra 10 tokens to achieve a complex translation, if you wish to change this, edit translate.ts file *
 
-AI Coder 
 
-Use AI to translate code from one language to another.
+AI Coder
 
-![AI Code Translator](./public/screenshot.png)
+AI to translate code from one programming language to another.
+
+Added functionality to add a tip (in tokens) to your request to encourage ChatGPT to process larger and more complex operations. 
+Tips are paid to ChatGPT, Default should be 0.
+
+![Ai-Coder](./public/screenshot.png)
 
 ## Running Locally
 
