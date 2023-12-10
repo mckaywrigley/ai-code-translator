@@ -153,13 +153,13 @@ const languages = [
   { value: 'Zig', 		label: 'Zig' },
   { value: 'Zsh', 		label: 'Zsh' },		
 			
-  { value: 'Ocatve or GNU Octave', 			label: 'GNU Octave' },
+  { value: 'Ocatve or GNU Octave', 	label: 'GNU Octave' },
 		 
-  { value: 'Mathematica', 				label: 'Mathematica' },		
+  { value: 'Mathematica', 	label: 'Mathematica' },		
 
-  { value: 'ThinkScript', 				label: 'ThinkScript' },
+  { value: 'ThinkScript', 	label: 'ThinkScript' },
 
-  { value: 'C++ for SierraChart trading platform, utilizes ACSIL programming concepts', 									label: 'SierraChart - C++' },		
+  { value: 'C++ for SierraChart trading platform, utilizes ACSIL programming concepts', 			label: 'SierraChart - C++' },		
 
   { value: 'Visual Basic for Applications (VBA)', 	label: 'Visual Basic for Applications (VBA)' },	
 
