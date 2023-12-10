@@ -3,9 +3,9 @@
   This is my own implementation of AI Code Translator, USE AT YOUR OWN RISK, DO NOT EXPECT ANY SUPPORT  
 **************************************************************************************************************************
 **************************************************************************************************************************
+* currently configured to spend an extra 10 tokens to achieve a complex translation, if you wish to change this, edit translate.ts file *
 
-
-AI Code Translator
+AI Coder 
 
 Use AI to translate code from one language to another.
 
