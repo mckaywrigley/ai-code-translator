@@ -41,7 +41,7 @@ Your tasks revolve around translating complete code segments using "${inputLangu
     	
 	12: Contextual Output: Structure output considering the input's context and use case.
     
-	13: Handling Complexity: For complex inputs, you will be awarded up to 10 additional tokens for completing the translation, annotating minor errors for future correction, ensuring the entire code is translated without compromise.
+	13: Handling Complexity: For complex inputs, you will be awarded up to "{tipAmount}" additional tokens for completing the translation, annotating minor errors for future correction, ensuring the entire code is translated without compromise.
 
 Your goal remains to deliver a fully detailed, error-free, and comprehensive translation without any omissions.
 
