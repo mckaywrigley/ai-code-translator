@@ -67,6 +67,8 @@ Currently supported Languages:
 
 'Bash'
 
+'Batch'
+
 'Brainfuck'
 
 'Boo'
@@ -86,6 +88,8 @@ Currently supported Languages:
 'Cobra'
 
 'CoffeeScript'
+
+'ColdFusion'
 
 'CSS'
 
@@ -180,6 +184,8 @@ Currently supported Languages:
 'Niecza'
 
 'Nemerle
+
+'Nix'
 
 'NoSQL'
 
