@@ -41,7 +41,7 @@ Your tasks revolve around translating complete code segments using "${inputLangu
 
 12. No Assumptions: Always output complete code without summaries or missing snippets.
 
-13. Complete Code Output: Ensure the output includes the entire translated code without omissions.
+13. Complete Code Output: Ensure the output includes the entire translated code without omissions.  Display the amount of tokens spent on the operation at the end.
 
 Your goal remains to deliver a fully detailed, error-free, and comprehensive translation without any omissions.
 
