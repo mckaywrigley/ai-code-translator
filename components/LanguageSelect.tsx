@@ -157,6 +157,8 @@ const languages = [
 		 
   { value: 'Mathematica', 	label: 'Mathematica' },		
 
+  { value: 'PowerLangiage.NET for MultiCharts Trading Platform, a nuanced proprietary language can be written in either C# or VB.NET, ', 		label: 'PowerLanguage.NET' },
+
   { value: 'ThinkScript', 	label: 'ThinkScript' },
 
   { value: 'C++ for SierraChart trading platform, utilizes ACSIL programming concepts', 			label: 'SierraChart - C++' },		
