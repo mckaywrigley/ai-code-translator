@@ -83,6 +83,8 @@ Currently supported Languages:
 
 'BCPL'
 
+'Binary'
+
 'Brainfuck'
 
 'Boo'
@@ -252,6 +254,8 @@ Currently supported Languages:
 'Monkey'
 
 'MoonScript'
+
+'Morse Code'
 
 'Mojo'
 
