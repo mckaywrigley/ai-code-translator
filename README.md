@@ -9,6 +9,7 @@ AI Coder
 
 AI to translate code from one programming language to another.
 
+
 ***************************************************************************************************************************
 ---Added functionality--- Additional programming languages, a Code Repair/Editor option where a user can input commands for ChatGPT to interpret while working with for the inputted code, 
 additional newer GPT models, and added an option to add a tip (in tokens) to your request to encourage ChatGPT to process larger and more complex operations. 
