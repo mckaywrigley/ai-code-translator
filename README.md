@@ -47,6 +47,8 @@ Currently supported Languages:
 
 'A#'
 
+'ABAP'
+
 'ActionScript'
 
 'Ada'
@@ -57,7 +59,11 @@ Currently supported Languages:
 
 'Arduino'
 
+'Apex'
+
 'Assembly Language'
+
+'AssemblyScript'
 
 'Assembly x86'
 
@@ -65,9 +71,17 @@ Currently supported Languages:
 
 'Axum'
 
+'AWK'
+
+'Ballerina'
+
 'Bash'
 
+'Basic'
+
 'Batch'
+
+'BCPL'
 
 'Brainfuck'
 
@@ -81,9 +95,19 @@ Currently supported Languages:
 
 'C#'
 
+'Ceylon'
+
+'Chapel'
+
+'Clipper'
+
 'Clojure'
 
+'Common Lisp'
+
 'COBOL'
+
+'COBOLScript'
 
 'Cobra'
 
@@ -91,15 +115,23 @@ Currently supported Languages:
 
 'ColdFusion'
 
+'Crystal'
+
 'CSS'
 
 'D'
 
 'Dart'
 
+'Delphi'
+
 'Django'
 
+'Dylan'
+
 'EasyLanguage'
+
+'ECMAScript'
 
 'EJS'
 
@@ -107,15 +139,23 @@ Currently supported Languages:
 
 'Elm'
 
+'Emacs Lisp'
+
 'Erlrang'
 
 'F#'
 
 'Fantom'
 
+'Forth'
+
 'Fortran'
 
+'FoxPro'
+
 'FTL'
+
+'Gambas'
 
 'GLSL'
 
@@ -124,6 +164,8 @@ Currently supported Languages:
 'GrGen.NET'
 
 'Groovy'
+
+'Hack'
 
 'Haml'
 
@@ -135,17 +177,31 @@ Currently supported Languages:
 
 'HTML'
 
+'Icon'
+
+'IDL'
+
+'Inform'
+
 'IronPython'
 
 'IronRuby'
 
 'IronScheme'
 
+'Io'
+
+'J'
+
 'J#'
+
+'Jade'
 
 'Java'
 
 'JavaScript'
+
+'JScript'
 
 'JScript.NET'
 
@@ -155,7 +211,11 @@ Currently supported Languages:
 
 'Julia'
 
+'KornShell'
+
 'Kotlin'
+
+'LabVIEW'
 
 'LaTeX'
 
@@ -163,15 +223,33 @@ Currently supported Languages:
 
 'LiveScript'
 
+'Logo'
+
+'LOLCODE'
+
 'LSL'
 
 'Lua'
+
+'M'
+
+'Magic'
 
 'Makefile'
 
 'Managed JScript'
 
 'Matlab'
+
+'Mercury'
+
+'MIVA Script'
+
+'Modula-2'
+
+'Modula-3'
+
+'Monkey'
 
 'MoonScript'
 
@@ -185,19 +263,33 @@ Currently supported Languages:
 
 'Nemerle
 
+'Nim'
+
 'Nix'
 
 'NoSQL'
 
 'Nunjucks'
 
+'Oberon'
+
 'Objective-C'
 
+'OCaml'
+
 'Oxygene'
+
+'Oz'
+
+'PARI/GP'
 
 'Pascal'
 
 'PascalABC.NET'
+
+'PascalScript'
+
+'Pawn'
 
 'PeachPie'
 
@@ -207,6 +299,8 @@ Currently supported Languages:
 
 'Phalanger'
 
+'Pike'
+
 'PL/SQL'
 
 'PowerBuilder'
@@ -215,11 +309,21 @@ Currently supported Languages:
 
 'Powershell'
 
+'Progress'
+
 'Prolog'
 
 'Protobuf'
 
+'Pure'
+
+'PureBasic'
+
+'PureScript'
+
 'Python'
+
+'Q'
 
 'R'
 
@@ -227,23 +331,69 @@ Currently supported Languages:
 
 'Racket'
 
+'REBOL'
+
+'Red'
+
 'RemObjects Mercury'
+
+'Ring'
+
+'RPG'
 
 'Ruby'
 
+'RubyMotion'
+
 'Rust'
+
+'RustScript'
 
 'SAS'
 
 'Scala'
 
+'Scala.js'
+
+'Scheme'
+
 'Scratch'
 
 'SDL'
 
+'Seed7'
+
+'Shell'
+
 'Silverfrost FTN95'
 
-'Small Basic'
+'Simula'
+
+'Slate'
+
+'SmallBASIC'
+
+'SmallTalk'
+
+'SML'
+
+'Snap!'
+
+'SNOBOL'
+
+'Solidity'
+
+'SPARK'
+
+'SPSS'
+
+'Squirrel'
+
+'Standard ML'
+
+'Stata'
+
+'SuperCollider'
 
 'Swift'
 
@@ -255,9 +405,17 @@ Currently supported Languages:
 
 'Synergy DBL.NET'
 
+'Tcl'
+
 'Team Developer'
 
+'Tex'
+
 'TOML'
+
+'Transact-SQL'
+
+'Turing'
 
 'TSX'
 
@@ -269,11 +427,17 @@ Currently supported Languages:
 
 'Vala'
 
+'VHDL'
+
 'Visual Basic'
 
 'Visual Basic 6 - VB6'
 
 'Visual COBOL'
+
+'Visual FoxPro'
+
+'VBA'
 
 'VB.NET'
 
@@ -285,13 +449,31 @@ Currently supported Languages:
 
 'Vue'
 
+'Wolfram Language'
+
+'X++'
+
+'X10'
+
+'Xojo'
+
+'XPL'
+
+'XQuery'
+
 'XSharp'
+
+'XSLT'
+
+'Yorick'
 
 'ZenScript'
 
 'Zig'
 
 'Zsh'
+
+'Z Shell'
 
 'Ocatve or GNU Octave'
 
