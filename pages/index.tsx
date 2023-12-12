@@ -170,7 +170,7 @@ export default function Home() {
 
 
           <button
-            className="mt-0 h-[40px] w-[180px] cursor-pointer rounded-md bg-blue-500 px-4 py-2 font-bold hover:bg-blue-600 active:bg-blue-700"
+            className="mt-0 h-[38px] w-[180px] cursor-pointer rounded-md bg-blue-500 px-4 py-2 font-bold hover:bg-blue-600 active:bg-blue-700"
             onClick={() => handleTranslate()}
             disabled={loading}
           >
