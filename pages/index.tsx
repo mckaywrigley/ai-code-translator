@@ -186,7 +186,7 @@ export default function Home() {
             : 'Enter some code, a tip amount, and click "Translate"'}
         </div>
 
-        <div className="mt-6 flex w-full max-w-[3000px] flex-col justify-between sm:flex-row sm:space-x-4">
+        <div className="mt-6 flex w-full max-w-[6000px] flex-col justify-between sm:flex-row sm:space-x-4">
           <div className="flex h-full flex-col	justify-center space-y-2 sm:w-2/4">
             <div className="text-center text-xl font-bold">Input</div>
 
