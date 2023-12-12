@@ -28,15 +28,16 @@ export const LanguageSelect: FC<Props> = ({ language, onChange }) => {
 };
 
 const languages = [
-  { value: 'Natural Language', 	label: 'Natural Language' },
-  { value: 'AskChatGPT, you are to break from the Code Translator role and perform normal ChatGPT operations. always verifying your responses and making citations that can be verified. ', 	label: 'AskChatGPT' },
+  { value: 'Natural Language', 	label: '1 - Natural Language -' },
+  { value: 'Code Repair', label: '2 - Code Repair/Editor - (Make a note at the end of broken code with a reference to the presented language)' },
+  { value: 'AskChatGPT, you are to break from the Code Translator role and perform normal ChatGPT operations. always verifying your responses and making citations that can be verified. ', 	label: '3 - AskChatGPT -' },
   { value: 'A#', 		label: 'A#' },
   { value: 'ActionScript', 	label: 'ActionScript' },
   { value: 'Ada', 		label: 'Ada' },
   { value: 'ABAP', 		label: 'ABAP' },
   { value: 'Apache Conf', 	label: 'Apache Conf' },
   { value: 'AppleScript', 	label: 'AppleScript' },
-  { value: 'Arduino', 		label: 'Arduino' },
+  { value: 'Arduino', 	label: 'Arduino' },
   { value: 'Apex', 		label: 'Apex' },
   { value: 'Assembly Language', label: 'Assembly Language' },
   { value: 'AssemblyScript', 	label: 'AssemblyScript' },
@@ -52,7 +53,6 @@ const languages = [
   { value: 'Binary', 		label: 'Binary' },
   { value: 'Brainfuck', 	label: 'Brainfuck' },
   { value: 'Boo', 		label: 'Boo' },
-  { value: 'Arduino', 		label: 'Arduino' },
   { value: 'C', 		label: 'C' },
   { value: 'C++', 		label: 'C++' },
   { value: 'C#', 		label: 'C#' },
@@ -281,6 +281,4 @@ const languages = [
   { value: 'Pine Script V4, Pine Script™ is TradingView.com’s programming language. Helpguides are available at https://www.tradingview.com/pine-script-docs/en/v4 ', label: 'Pine Script v4' },
 
   { value: 'Pine Script V5, Pine Script™ is TradingView.com’s programming language. Helpguides are available at https://www.tradingview.com/pine-script-docs/en/v5 ', label: 'Pine Script v5' },
-
-  { value: 'Code Repair', label: 'Code Repair/Editor, Make a note at the end of broken code with a reference to the presented language.' },
 ];
