@@ -29,6 +29,7 @@ export const LanguageSelect: FC<Props> = ({ language, onChange }) => {
 
 const languages = [
   { value: 'Natural Language', 	label: 'Natural Language' },
+  { value: 'AskChatGPT, you are to break from the Code Translator role and perform normal ChatGPT operations. always verifying your responses and making citations that can be verified. ', 	label: 'AskChatGPT' },
   { value: 'A#', 		label: 'A#' },
   { value: 'ActionScript', 	label: 'ActionScript' },
   { value: 'Ada', 		label: 'Ada' },
