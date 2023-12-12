@@ -50,7 +50,6 @@ Your goal remains to deliver a fully detailed, error-free, and comprehensive tra
 
 
 
-
   
       Example translating from JavaScript to Python:
   

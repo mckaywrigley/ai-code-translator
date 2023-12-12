@@ -153,7 +153,7 @@ export default function Home() {
       </Head>
       <div className="flex h-full min-h-screen flex-col items-center bg-[#0E1117] px-4 pb-20 text-neutral-200 sm:px-10">
         <div className="mt-10 flex flex-col items-center justify-center sm:mt-20">
-          <div className="text-6xl font-bold">Ai Coder</div>
+          <div className="text-7xl font-bold">Ai Coder</div>
         </div>
 
         <div className="mt-6 text-center text-sm">
@@ -178,12 +178,12 @@ export default function Home() {
           </button>
         </div>
 
-        <div className="mt-2 text-center text-xs">
+        <div className="mt-2 text-center text-md">
           {loading
             ? 'Translating...'
             : hasTranslated
             ? 'Output copied to clipboard!'
-            : 'Enter some code, a tip amount, and click "Translate"'}
+            : 'Select your Input and Output Languages, enter some code, a tip amount, and click "Translate"'}
         </div>
 
         <div className="mt-6 flex w-full max-w-[6000px] flex-col justify-between sm:flex-row sm:space-x-4">
