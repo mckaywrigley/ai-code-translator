@@ -491,7 +491,7 @@ Currently supported Languages:
 
 'ThinkScript'
 
-'C++ for SierraChart trading platform'
+'ASCIL C++ for SierraChart'
 
 'Visual Basic for Applications (VBA)'
 
