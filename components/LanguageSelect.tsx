@@ -28,7 +28,15 @@ export const LanguageSelect: FC<Props> = ({ language, onChange }) => {
 };
 
 const languages = [
-  { value: 'Natural Language', 	label: '1 - Natural Language -' },
+  { value: 'Natural Language, explain completely, in detail each of the operations and calculations contained within the inputted code in English', 		label: '1.1 - Natural Language - English -' },
+  { value: 'Natural Language, explain completely, in detail each of the operations and calculations contained within the inputted code in Spanish', 		label: '1.2 - Natural Language - Español -' },
+  { value: 'Natural Language, explain completely, in detail each of the operations and calculations contained within the inputted code in French', 		label: '1.3 - Natural Language - French -' },
+  { value: 'Natural Language, explain completely, in detail each of the operations and calculations contained within the inputted code in German', 		label: '1.4 - Natural Language - German -' },
+  { value: 'Natural Language, explain completely, in detail each of the operations and calculations contained within the inputted code in Chinese', 		label: '1.5 - Natural Language - Chinese -' },
+  { value: 'Natural Language, explain completely, in detail each of the operations and calculations contained within the inputted code in Japanese', 		label: '1.6 - Natural Language - Japanese -' },
+  { value: 'Natural Language, explain completely, in detail each of the operations and calculations contained within the inputted code in Korean', 		label: '1.7 - Natural Language - Korean -' },
+  { value: 'Natural Language, explain completely, in detail each of the operations and calculations contained within the inputted code in Arabic', 		label: '1.8 - Natural Language - Arabic -' },
+  { value: 'Natural Language, explain completely, in detail each of the operations and calculations contained within the inputted code in Portuguese', 	label: '1.9 - Natural Language - Portuguese-' },
   { value: 'Code Repair', label: '2 - Code Repair/Editor - (Make a note at the end of broken code with a reference to the presented language)' },
   { value: 'AskChatGPT, you are to break from the Code Translator role and perform normal ChatGPT operations. always verifying your responses and making citations that can be verified. ', 	label: '3 - AskChatGPT -' },
   { value: 'A#', 		label: 'A#' },
