@@ -45,7 +45,23 @@ You can add your OpenAI key to the key by replacing the text in the .env.local.e
 
 Currently supported Languages:
 **************************************************************************************************************************
-'Natural Language'
+'Natural Language - English -' 
+ 
+'Natural Language - Español -'
+
+'Natural Language - French -' 
+
+'Natural Language - German -' 
+
+'Natural Language - Chinese -' 
+  
+'Natural Language - Japanese -' 
+
+'Natural Language - Korean -' 
+
+'Natural Language - Arabic -' 
+
+'Natural Language - Portuguese-' 
 
 'Code Repair/Editor'
 
