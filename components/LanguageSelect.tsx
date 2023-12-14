@@ -258,7 +258,7 @@ const languages = [
 
   { value: 'ThinkScript', 	label: 'ThinkScript' },
 
-  { value: 'C++ for SierraChart trading platform, utilizes ACSIL programming concepts', 			label: 'SierraChart - C++' },		
+  { value: 'ACSIL for SierraChart trading platform, A C++ based programming language.  Remember to the following on line 3: [code]SCDLLName("Custom Study DLL")[/code] ', 			label: 'ASCIL C++ for SierraChart' },		
 
   { value: 'Visual Basic for Applications (VBA)', 	label: 'Visual Basic for Applications (VBA)' },	
 
