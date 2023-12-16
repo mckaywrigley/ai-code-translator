@@ -58,6 +58,10 @@ Currently supported Languages:
 **************************************************************************************************************************
 'Natural Language'
 
+'Code Repair/Editor'
+
+'AskChatGPT
+
 'A#'
 
 'ABAP'
@@ -521,6 +525,4 @@ Currently supported Languages:
 'Pine Script V4'
 
 'Pine Script V5'
-
-'Code Repair/Editor'
 
