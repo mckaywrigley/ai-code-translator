@@ -17,10 +17,9 @@ additional newer GPT models, and added an option to add a tip (in tokens) to you
 Tips are paid to ChatGPT, I suggest using the latest models like GPT-4-1106-Preview before resorting to adding a tip to encourage ChatGPT to force a complex translation with a tip.
 I edited it so ChatGPT only accepts the token amount necessary to complete the task, hopefully it stays true to that, but I'd advise keeping the tip amount at 0 to ensure you're not racking up unnecessary carges.
 An estimated tip token amount and cost may be suggested in the output if a task is too complex
-
-Issues: Scrolling through the Languages is too fast, especially since I added more languages. I'm unsure where the setting to correct this is located.
 ***************************************************************************************************************************
 ![Ai-Coder](./public/screenshot.png)
+![Ai-Coder](./public/screenshot0.png)
 
 ## Running Locally
 
@@ -45,27 +44,7 @@ You can add your OpenAI key to the key by replacing the text in the .env.local.e
 
 Currently supported Languages:
 **************************************************************************************************************************
-'Natural Language - English -' 
- 
-'Natural Language - Español -'
-
-'Natural Language - French -' 
-
-'Natural Language - German -' 
-
-'Natural Language - Chinese -' 
-  
-'Natural Language - Japanese -' 
-
-'Natural Language - Korean -' 
-
-'Natural Language - Arabic -' 
-
-'Natural Language - Portuguese-' 
-
-'Code Repair/Editor'
-
-'AskChatGPT' (Normal ChatGPT operations, breaks from translator role)
+'Natural Language'
 
 'A#'
 
@@ -507,7 +486,7 @@ Currently supported Languages:
 
 'ThinkScript'
 
-'ASCIL C++ for SierraChart'
+'C++ for SierraChart trading platform'
 
 'Visual Basic for Applications (VBA)'
 
@@ -531,4 +510,5 @@ Currently supported Languages:
 
 'Pine Script V5'
 
+'Code Repair/Editor'
 

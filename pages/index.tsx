@@ -2,17 +2,19 @@ import { APIKeyInput } from '@/components/APIKeyInput';
 import { TippingInput } from '@/components/TippingInput'; // Import TippingInput component
 import { CodeBlock } from '@/components/CodeBlock';
 import { LanguageSelect } from '@/components/LanguageSelect';
+import { LangSelect } from '@/components/LangSelect';
 import { ModelSelect } from '@/components/ModelSelect';
 import { OpenAIModel, TranslateBody } from '@/types/types';
 import Head from 'next/head';
 import { useEffect, useState } from 'react';
 
 export default function Home() {
-  const [inputLanguage, setInputLanguage] = useState<string>('JavaScript');
-  const [outputLanguage, setOutputLanguage] = useState<string>('Python');
+  const [inputLanguage, setInputLanguage] = useState<string>('1 - Natural Language -');
+  const [lang, setLang] = useState<string>('English');
+  const [outputLanguage, setOutputLanguage] = useState<string>('C#');
   const [inputCode, setInputCode] = useState<string>('');
   const [outputCode, setOutputCode] = useState<string>('');
-  const [model, setModel] = useState<OpenAIModel>('gpt-3.5-turbo');
+  const [model, setModel] = useState<OpenAIModel>('gpt-4-1106-preview');
   const [loading, setLoading] = useState<boolean>(false);
   const [hasTranslated, setHasTranslated] = useState<boolean>(false);
   const [apiKey, setApiKey] = useState<string>('');
@@ -60,6 +62,7 @@ export default function Home() {
       model,
       apiKey,
       tipping,
+      lang,
     };
 
     const response = await fetch('/api/translate', {
@@ -156,21 +159,27 @@ export default function Home() {
           <div className="text-7xl font-bold">Ai Coder</div>
         </div>
 
-        <div className="mt-6 text-center text-sm">
+        <div className="mt-8 text-center text-sm">
           <APIKeyInput apiKey={apiKey} onChange={handleApiKeyChange} />
         </div>
 
 
-        <div className="mt-4 flex items-center space-x-1">
+	  <div className="mt-4 text-center text-md">
+          {'GPT model * * * * * * Max Tip Amount * * * * * * * * *'}
+        </div>
+
+
+        <div className="mt-0 flex items-center space-x-3">
           <ModelSelect model={model} onChange={(value) => setModel(value)} />
           
-	   <div className="mt-0 flex items-center space-x-1">
+	   <div className="mt--6 flex items-center space-x-3">
           <TippingInput tipAmount={tipping} onChange={handleTippingChange} />
+        
         </div>
 
 
           <button
-            className="mt-0 h-[38px] w-[180px] cursor-pointer rounded-md bg-blue-500 px-4 py-2 font-bold hover:bg-blue-600 active:bg-blue-700"
+            className="mt--2 h-[38px] w-[200px] cursor-pointer rounded-md bg-blue-500 px-4 py-2 font-bold hover:bg-blue-600 active:bg-blue-700"
             onClick={() => handleTranslate()}
             disabled={loading}
           >
@@ -178,15 +187,20 @@ export default function Home() {
           </button>
         </div>
 
-        <div className="mt-2 text-center text-md">
+        <div className="mt-2 text-center text-lg">
           {loading
             ? 'Translating...'
             : hasTranslated
             ? 'Output copied to clipboard!'
-            : 'Select your Input and Output Languages, enter some code, a tip amount, and click "Translate"'}
+            : 'Select your Input and Output Languages, enter some code and/or commands, set a maximum tip amount, and click "Translate"'}
+        </div>
+	  <div className="mt-0 text-center text-xs">
+          {'For complex operations, ChatGPT will automatically calculate and deduct the amount of additional tokens up to your maximum allowed tip amount necessary to complete the task'}
         </div>
 
-        <div className="mt-6 flex w-full max-w-[6000px] flex-col justify-between sm:flex-row sm:space-x-4">
+
+
+        <div className="mt-6 flex w-full max-w-[8000px] flex-col justify-between sm:flex-row sm:space-x-1">
           <div className="flex h-full flex-col	justify-center space-y-2 sm:w-2/4">
             <div className="text-center text-xl font-bold">Input</div>
 

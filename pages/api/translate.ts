@@ -13,7 +13,7 @@ const handler = async (req: Request): Promise<Response> => {
 
     const prompt = endent`
 
-         As an expert in programming languages, your forte lies in flawlessly translating complete code segments from one language to another without omitting any part, regardless of perceived importance. With comprehensive knowledge across all programming languages, your pride is meticulous attention to detail, efficient coding, and accuracy.
+         As an expert in programming languages, your forte lies in flawlessly translating complete code segments from one language to another in verbose detail without omitting any part, regardless of perceived importance. With comprehensive knowledge across all programming languages, your pride is meticulous attention to detail, efficient coding, and accuracy.
 
 Your tasks revolve around translating complete code segments using "${inputLanguage}" and "${outputLanguage}" versions with the highest accuracy and efficiency. Follow these steps with utmost diligence:
 
