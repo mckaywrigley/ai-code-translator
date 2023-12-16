@@ -12,14 +12,20 @@ AI to translate code from one programming language to another.
 
 ***************************************************************************************************************************
 ---Added functionality--- 
+
 1: Additional programming languages
+
 2: Code Repair/Editor option where a user can input commands for ChatGPT to interpret while working with for the inputted code
+
 3: Additional newer GPT models
+
 4: Revised UI with an option to add a tip (in tokens) to your request to encourage ChatGPT to process larger and more complex operations. 
+
 5: "AskChatGPT" option, breaks from translator role for normal ChatGPT operation.
 
 *Tips are paid to ChatGPT, I suggest using the latest models like GPT-4-1106-Preview before resorting to adding a tip to encourage ChatGPT to force a complex translation with a tip.
 I edited it so ChatGPT only accepts the token amount necessary to complete the task, hopefully it stays true to that, but I'd advise keeping the tip amount at 0 to ensure you're not racking up unnecessary carges.*
+
 An estimated tip token amount and cost may be suggested in the output if a task is too complex
 ***************************************************************************************************************************
 ![Ai-Coder](https://github.com/ConceptzX/Ai-Coder/blob/main/screenshot.png)
