@@ -18,8 +18,8 @@ Tips are paid to ChatGPT, I suggest using the latest models like GPT-4-1106-Prev
 I edited it so ChatGPT only accepts the token amount necessary to complete the task, hopefully it stays true to that, but I'd advise keeping the tip amount at 0 to ensure you're not racking up unnecessary carges.
 An estimated tip token amount and cost may be suggested in the output if a task is too complex
 ***************************************************************************************************************************
-![Ai-Coder](./public/screenshot.png)
-![Ai-Coder](./public/screenshot0.png)
+![Ai-Coder](https://github.com/ConceptzX/Ai-Coder/blob/main/screenshot.png)
+![Ai-Coder](https://github.com/ConceptzX/Ai-Coder/blob/main/screenshot0.png)
 
 ## Running Locally
 
