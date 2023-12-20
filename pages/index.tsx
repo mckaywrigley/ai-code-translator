@@ -14,7 +14,7 @@ export default function Home() {
   const [outputLanguage, setOutputLanguage] = useState<string>('C#');
   const [inputCode, setInputCode] = useState<string>('');
   const [outputCode, setOutputCode] = useState<string>('');
-  const [model, setModel] = useState<OpenAIModel>('gpt-3.5');
+  const [model, setModel] = useState<OpenAIModel>('gpt-4');
   const [loading, setLoading] = useState<boolean>(false);
   const [hasTranslated, setHasTranslated] = useState<boolean>(false);
   const [apiKey, setApiKey] = useState<string>('');
