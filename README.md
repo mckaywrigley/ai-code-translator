@@ -2,6 +2,8 @@
 **************************************************************************************************************************
   This is my own implementation of AI Code Translator, USE AT YOUR OWN RISK, DO NOT EXPECT ANY SUPPORT
 
+  Trading Platform programming languages languages will be removed form this Ai-Coder version and migrated to ConceptzX/Ai-TradingPlatform-Coder
+
   Main branch should be stable.  Please submit an report issue if it isn't, feel free to develop further and submit pull requests for consideration.
 **************************************************************************************************************************
 **************************************************************************************************************************
