@@ -248,36 +248,4 @@ const languages = [
   { value: 'Zig', 		label: 'Zig' },
   { value: 'Zsh', 		label: 'Zsh' },		
   { value: 'Z Shell', 		label: 'Z Shell' },
-			
-  { value: 'Ocatve or GNU Octave', 	label: 'GNU Octave' },
-		 
-  { value: 'Mathematica', 	label: 'Mathematica' },		
-
-  { value: 'PowerLangiage.NET for MultiCharts Trading Platform, a nuanced proprietary language can be written in either C# or VB.NET, ', 		label: 'PowerLanguage.NET' },
-
-  { value: 'ThinkScript', 	label: 'ThinkScript' },
-
-  { value: 'ACSIL for SierraChart trading platform, A C++ based programming language.  Remember to the following on line 3: [code]SCDLLName("Custom Study DLL")[/code] ', 			label: 'ASCIL C++ for SierraChart' },		
-
-  { value: 'Visual Basic for Applications (VBA)', 	label: 'Visual Basic for Applications (VBA)' },	
-
-  { value: 'Esignal Formula Script (EFS)', 		label: 'Esignal Formula Script (EFS)' },
-
-  { value: 'ProBuilder/ProRealCode, code for the trading platform ProRealTime. Its programming language is ProBuilder (also known as ProRealCode).',         	label: 'ProRealCode' },
-
-  { value: 'MetaStock Formula Language (MFL)', 		label: 'MetaStock Formula Language (MFL)' },
-
-  { value: 'Amibroker Formula Language (AFL)', 		label: 'Amibroker Formula Language (AFL)' },
-
-  { value: 'NinjaScript for NinjaTrader 7, NinjaScript is a nuanced language is written in C# targeting .NET 3.5 Care needs to be taken to ensure the code is not broken by incorrectly referencing C# or a different version of NinjaScript.', label: 'NinjaScript 7' },
-
-  { value: 'NinjaScript for NinjaTrader 8.1.2.0 or higher, NinjaScript is a nuanced language written in C# targeting .NET 8.0 Care needs to be taken to ensure the code is not broken by incorrectly referencing C# or a different version of NinjaScript.', label: 'NinjaScript >= 8.1.2.0' },
-
-  { value: 'NinjaScript for NinjaTrader 8.1.1.7 or lower, NinjaScript is a nuanced language written in C# targeting .NET 4.8 Care needs to be taken to ensure the code is not broken by incorrectly referencing C# or a different version of NinjaScript.', label: 'NinjaScript <= 8.1.1.7' },
-
-  { value: 'Pine Script V3, Pine Script™ is TradingView.com’s programming language. Helpguides are available at https://www.tradingview.com/pine-script-docs/en/v3 ', label: 'Pine Script v3' },
-
-  { value: 'Pine Script V4, Pine Script™ is TradingView.com’s programming language. Helpguides are available at https://www.tradingview.com/pine-script-docs/en/v4 ', label: 'Pine Script v4' },
-
-  { value: 'Pine Script V5, Pine Script™ is TradingView.com’s programming language. Helpguides are available at https://www.tradingview.com/pine-script-docs/en/v5 ', label: 'Pine Script v5' },
 ];
