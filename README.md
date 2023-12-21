@@ -1,8 +1,10 @@
+Development will be shifted to Ai-TradingPlatform-Coder and this Ai-Coder project is now archived and no further updates will be done.
+
 **************************************************************************************************************************
 **************************************************************************************************************************
   This is my own implementation of AI Code Translator, USE AT YOUR OWN RISK, DO NOT EXPECT ANY SUPPORT
 
-  Trading Platform programming languages languages will be removed form this Ai-Coder version and migrated to ConceptzX/Ai-TradingPlatform-Coder
+  Trading Platform programming languages languages has been removed form Ai-Coder and migrated to ConceptzX/Ai-TradingPlatform-Coder.
 
   Main branch should be stable.  Please submit an report issue if it isn't, feel free to develop further and submit pull requests for consideration.
 **************************************************************************************************************************
@@ -499,13 +501,3 @@ Currently supported Languages:
 'Zsh'
 
 'Z Shell'
-
-'Ocatve or GNU Octave'
-
-'Mathematica'
-
-'Visual Basic for Applications (VBA)'
-
-'Esignal Formula Script (EFS)'
-
-'MetaStock Formula Language (MFL)'
