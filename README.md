@@ -504,29 +504,8 @@ Currently supported Languages:
 
 'Mathematica'
 
-'ThinkScript'
-
-'C++ for SierraChart trading platform'
-
 'Visual Basic for Applications (VBA)'
 
 'Esignal Formula Script (EFS)'
 
-'ProBuilder/ProRealCode, code for the trading platform ProRealTime'
-
 'MetaStock Formula Language (MFL)'
-
-'Amibroker Formula Language (AFL)'
-
-'NinjaScript for NinjaTrader 7'
-
-'NinjaScript for NinjaTrader 8.1.2.0 or higher'
-
-'NinjaScript for NinjaTrader 8.1.1.7 or below'
-
-'Pine Script V3'
-
-'Pine Script V4'
-
-'Pine Script V5'
-
