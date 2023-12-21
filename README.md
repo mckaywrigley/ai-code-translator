@@ -25,6 +25,8 @@ AI to translate code from one programming language to another.
 
 5: "AskChatGPT" option, breaks from translator role for normal ChatGPT operation.
 
+6: Updated models, added GPT-4.5-Turbo as some users may have early access
+
 *Tips are paid to ChatGPT, I suggest using the latest models like GPT-4-1106-Preview before resorting to adding a tip to encourage ChatGPT to force a complex translation with a tip.
 I edited it so ChatGPT only accepts the token amount necessary to complete the task, hopefully it stays true to that, but I'd advise keeping the tip amount at 0 to ensure you're not racking up unnecessary carges.*
 
